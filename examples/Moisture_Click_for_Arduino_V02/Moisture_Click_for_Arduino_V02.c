@@ -20,8 +20,8 @@
  */
 // ------------------------------------------------------------------- INCLUDES
 
-#include "board.h"
-#include "log.h"
+// #include "board.h"
+// #include "log.h"
 #include "moisture.h"
 
 // ------------------------------------------------------------------ VARIABLES
