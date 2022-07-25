@@ -42,6 +42,21 @@ static void clc_wait_period ( );
 
 // ------------------------------------------------ PUBLIC FUNCTION DEFINITIONS
 
+/* void moisture_cfg_setup ( moisture_cfg_t *cfg )
+{
+    // Communication gpio pins 
+
+    cfg->scl = HAL_PIN_NC;
+    cfg->sda = HAL_PIN_NC;
+
+    // Additional gpio pins
+
+    cfg->int_pin = HAL_PIN_NC;
+
+    cfg->i2c_speed = I2C_MASTER_SPEED_STANDARD; 
+    cfg->i2c_address = MOISTURE_DEV_ADR_GND;
+} */
+
 void moisture_cfg_setup ( moisture_cfg_t *cfg )
 {
     // Communication gpio pins 
@@ -242,12 +257,12 @@ uint8_t moisture_check_interrupt ( moisture_t *ctx )
 
 static void cal_wait_period ( )
 {
-     Delay_10ms( );
+     delay(10);
 }
 
 static void clc_wait_period ( )
 {
-     Delay_1ms( );
+     delay(1);
 }
 
 // ------------------------------------------------------------------------ END
