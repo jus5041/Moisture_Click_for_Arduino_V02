@@ -22,3 +22,8 @@ void loop(){
     ...
 }
 ```
+
+# Reference
+This library was created by referring to the link below.
+>* Official library of Moisture Click module : https://github.com/MikroElektronika/Moisture_click   
+>* FDC2XXX library : https://github.com/zharijs/FDC2214
